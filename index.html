@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    <title>Correio Elegante</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        body {
+            font-family: 'Merienda One', cursive;
+            font-size: 15px;
+            height: 100vh;
+        }
+        .img-fundo {
+            background: url("arraia.png");
+            width: 100vw;
+            height: 100vh;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        .img-fundo div {
+            text-align: center;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="img-fundo">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus cumque deserunt sint im
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener ("load", arraia)
+        function arraia() {
+
+            let nome = prompt("Digite seu nome (Apenas o primeiro nome)");
+            let divmsg = document.querySelector(".img-fundo div");
+            let divimg = document.querySelector(".img-fundo");
+            let stylemsg = "background:url('arraia2.jpg'); background-size:100%;background-repeat: no-repeat;"; 
+
+            if (nome == "Rafael") {
+                divmsg.innerHTML = "Aqui vai a mensagem que eu quero que apareça para o Rafael"
+                divimg.setAttribute("style", stylemsg);
+            }
+            else if (nome == "Rosangela") {
+                divmsg.innerHTML = "Aqui vai a mensagem que eu quero que apareça para o Rafael"
+                divimg.setAttribute("style", stylemsg);
+            }
+            else if (nome == "Pedro") {
+                divmsg.innerHTML = "Aqui vai a mensagem que eu quero que apareça para o Rafael"
+                divimg.setAttribute("style", stylemsg);
+            }
+            else if (nome == "Juliana") {
+                divmsg.innerHTML = "Aqui vai a mensagem que eu quero que apareça para o Rafael"
+                divimg.setAttribute("style", stylemsg);
+            }
+            else if (nome == "Fernanda") {
+                divmsg.innerHTML = "Aqui vai a mensagem que eu quero que apareça para o Rafael"
+                divimg.setAttribute("style", stylemsg);
+            }
+        }
+    </script>
+</body>
+
+</html>
