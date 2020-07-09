@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+        font-family: 'Merienda One', cursive;
+        height: 100vh;
+        background: black;
+    }
+    .img-fundo {
+        background: url("arraia.png");
+        width: 100vw;
+        height: 100vh;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .img-fundo div {
+        position: absolute;
+        top: 120px;
+        margin: 0 92px;
+    }
+    @media (min-width: 320px ) {
+    .button {
+        position: relative;
+        margin: 30px 27px;
+        border: none;
+        border-radius: 3px;
+        padding: 10px 4px;
+        font-weight: bold;
+        font-size: 11px;
+        background-color: purple;
+        color:whitesmoke;
+    }
+}
+@media (min-width: 375px ) {
+    .button {
+        margin: 55px 55px;
+        font-size: 11px;
+        
+    }
+}
+@media (min-width: 414px ) {
+    .button {
+        margin: 70px 74px;
+        font-size: 12px;
+        
+    }
+}
