@@ -14,8 +14,8 @@
         }
         body {
             font-family: 'Merienda One', cursive;
-            font-size: 15px;
             height: 100vh;
+            background: black;
         }
         .img-fundo {
             background: url("arraia.png");
@@ -25,8 +25,21 @@
             background-repeat: no-repeat;
         }
         .img-fundo div {
-            text-align: center;
-            
+            position: absolute;
+            top: 124px;
+            margin: 0 92px;
+        }
+        .button {
+            position: absolute;
+            top: 77px;
+            left: 72px;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 6px;
+            font-weight: bold;
+            font-size: 12px;
+            background-color: purple;
+            color:whitesmoke;
         }
     </style>
 </head>
@@ -34,41 +47,40 @@
 <body>
     <div class="img-fundo">
         <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus cumque deserunt sint im
+            <input type="button" name="Correio" value="Correio Elegante" onclick="arraia ()" class="button">
         </div>
     </div>
 
     <script>
-        window.addEventListener ("load", arraia)
-        function arraia() {
+          function arraia() {
 
             let nome = prompt("Digite seu nome (Apenas o primeiro nome)");
             let divmsg = document.querySelector(".img-fundo div");
             let divimg = document.querySelector(".img-fundo");
-            let stylemsg = "background:url('arraia2.jpg'); background-size:100%;background-repeat: no-repeat;"; 
-
+            let stylemsg = "background:url('arraia2.jpg'); background-size:100%;background-repeat: no-repeat;color: white; font-size: 13.5px;"; 
+            
             if (nome == "Rafael") {
-                divmsg.innerHTML = "Aqui vai a mensagem que eu quero que apareça para o Rafael"
+                divmsg.innerHTML = "Rafa, receba esse correio elegante como uma forma de eu te conhecer melhor, me pareço muito com você na maneira de pensar, também zombava de alguns crentes e hoje fico espantado com o amor de Deus por nós, entao receba esse correio em sinal da minha admiração pela sua adoração por Deus, e sua alegria, vc é um homem que leva a vida como eu sempre em alto astral. Grande Abraço!"
                 divimg.setAttribute("style", stylemsg);
             }
-            else if (nome == "Rosangela") {
-                divmsg.innerHTML = "Aqui vai a mensagem que eu quero que apareça para o Rafael"
+            else if (nome == "Rosângela") {
+                divmsg.innerHTML = "Rosângela, so gostaria de agradecer por Deus ter colocado você em nossas vidas, hoje somos um casal em muito mais harmonia e se amando mais graças a você (a mando de Deus) e meu muito obrigado por cuidar da minha linda esposa nesse tempo que trabalharam juntas, sua familia é um exemplo a ser seguido vocês são lindos juntos, graças ao nosso bom Deus. UM BEIJO ENORME PARA TODOS VOCÊS"
                 divimg.setAttribute("style", stylemsg);
             }
-            else if (nome == "Pedro") {
-                divmsg.innerHTML = "Aqui vai a mensagem que eu quero que apareça para o Rafael"
-                divimg.setAttribute("style", stylemsg);
-            }
-            else if (nome == "Juliana") {
-                divmsg.innerHTML = "Aqui vai a mensagem que eu quero que apareça para o Rafael"
+            else if (nome == "Fabio") {
+                divmsg.innerHTML = "Fabio, obrigado pelas mensagens diárias, sem duvidas essas elas estão fazendo muita diferença em minha vida, peço mil desculpa quando demoro para responder mas saiba que sua familia sempre está em minhas orações. Grande Abraço !"
                 divimg.setAttribute("style", stylemsg);
             }
             else if (nome == "Fernanda") {
-                divmsg.innerHTML = "Aqui vai a mensagem que eu quero que apareça para o Rafael"
+                divmsg.innerHTML = "Fê, de qualquer forma ja iria mandar, mas você implorando daquela forma impossivel eu nao mandar rsrs, agradece a todos vocês por ter nos recebidos tão bem, vocês estão fazendo um bem imenso em nossas vida, um Beijo enorme pra Você e pro Rafa."
+                divimg.setAttribute("style", stylemsg);
+            }
+            else if (nome == "Amanda") {
+                divmsg.innerHTML = "Amanda, obrigado pela sabedoria que você me passa cada vez que fala, todas as vezes que vejo você dizendo fico encantado com quanto você sabe e entende, e eu so tenho a agradecer por ter cuidado tão bem da minha linda esposa o tempo que ela trabalhou com você, meu muito obrigado. um BEIJO ENORME PRA VOCÊ E PRO LUCAS."
                 divimg.setAttribute("style", stylemsg);
             }
             else {
-                divmsg.innerHTML = "Infelizmente esse correio elegante tem destino certo, ou escreveu o nome errado, mas de qualquer forma sinta uma pessoa muito especial e sem dúvida muito abençoada."
+                divmsg.innerHTML = "Infelizmente esse correio elegante tem destino certo, ou você digitou o nome escreveu errado ou esse correio não lhe pertence, mas de qualquer forma sinta-se muito especial e sem dúvida muito abençoada."
                 divimg.setAttribute("style", stylemsg);
             }
             
